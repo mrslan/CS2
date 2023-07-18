@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string remakeString(string& str, const string& weirdWord);
+string remakeString(const string& str, const string& weirdWord);
 
 int main(){
 
@@ -25,7 +25,7 @@ int main(){
     return 0;
 }
 
-string remakeString(string& str, const string& weirdWord){
+string remakeString(const string& str, const string& weirdWord){
     string retString = str;
     size_t pos = retString.find(weirdWord);
     if (pos != string::npos){
